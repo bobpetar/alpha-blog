@@ -27,10 +27,19 @@ $navbar-default-bg: #413f3f;
   height: 550px;
 }
 
+.jumbotron h4 {
+  color: #272626;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: -10px;
+  letter-spaceing: -1;
+  font-weigth: bold;
+}
+
 .jumbotron h1 {
   color: #272626;
   text-align: center;
-  margin-bottom: 39px;
+  margin-bottom: 25px;
   margin-top: -10px;
   letter-spaceing: -1;
   font-weigth: bold;
