@@ -128,6 +128,11 @@ $navbar-default-bg: #413f3f;
   padding-bottom: 15px;
 }
 
+.listing {
+	list-style: none;
+	padding-left: 0px;
+}
+
 footer {
   margin-top: 45px;
   padding-top: 5px;
@@ -262,8 +267,8 @@ footer ul li {
 
 
 
-
-.version.index /* version checker */
+/*
+.version.index 
 {
 	color: #0000F7;
 	background-color: #2970BF;
@@ -2483,7 +2488,7 @@ body
 	font-size: 14px;
 	line-height: 17px;
 	word-wrap: break-word;
-	text-rendering: optimizeLegibility;/* kerning, primarily */
+	text-rendering: optimizeLegibility;
 	-moz-font-feature-settings: 'liga';
 	-ms-font-feature-settings: 'liga';
 	-webkit-font-feature-settings: 'liga';
@@ -2525,7 +2530,7 @@ a:active
 	text-decoration: underline;
 }
 
-a.nontext /* used to override default properties of 'a' tag */
+a.nontext 
 {
 	color: black;
 	text-decoration: none;
@@ -2617,7 +2622,7 @@ a.nontext /* used to override default properties of 'a' tag */
 	white-space: nowrap;
 }
 
-.MenuBar  .MenuBarView,.MenuBar  .SubMenuView /* Resets for ul and li in menus */
+.MenuBar  .MenuBarView,.MenuBar  .SubMenuView 
 {
 	display: block;
 	list-style: none;
@@ -2635,31 +2640,31 @@ a.nontext /* used to override default properties of 'a' tag */
 	word-wrap: normal;
 }
 
-.rootelem /* the root of the artwork tree */
+.rootelem 
 {
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.colelem /* a child element of a column */
+.colelem 
 {
 	display: inline;
 	float: left;
 	clear: both;
 }
 
-.colelem100 /* a child element of a column that is 100% width */
+.colelem100 
 {
 	clear: both;
 }
 
-.grpelem /* a child element of a group */
+.grpelem 
 {
 	display: inline;
 	float: left;
 }
 
-.clearfix:after /* force a container to fit around floated items */
+.clearfix:after 
 {
 	content: "\0020";
 	visibility: hidden;
@@ -2668,76 +2673,75 @@ a.nontext /* used to override default properties of 'a' tag */
 	clear: both;
 }
 
-*:first-child+html .clearfix /* IE7 */
+*:first-child+html .clearfix 
 {
 	zoom: 1;
 }
 
-.clip_frame /* used to clip the contents as in the case of an image frame */
+.clip_frame 
 {
 	overflow: hidden;
 }
 
-.inclusion_context /* context for positioning a group of elements that share the same height */
+.inclusion_context 
 {
 	display: table;
 	table-layout: fixed;
 	width: 0.01px;
 }
 
-.inclelem /* element of an inclusion context */
+.inclelem 
 {
 	display: table-cell;
 	vertical-align: top;
 }
 
-.f3s_mid /* 3-slice frame, middle slice */
+.f3s_mid 
 {
 	background-repeat: repeat;
 }
 
-.f3s_top,.f3s_bot /* 3-slice frame, top slice */
-{
+.f3s_top,.f3s_bot{
 	background-repeat: no-repeat;
 }
 
-.f9s_top_left,.f9s_bot_left /* 9-slice frame, left corner slice */
+.f9s_top_left,.f9s_bot_left 
 {
 	background-repeat: no-repeat;
 	background-position: left;
 }
 
-.f9s_top_right,.f9s_bot_right /* 9-slice frame, right corner slice */
+.f9s_top_right,.f9s_bot_right 
 {
 	background-repeat: no-repeat;
 	background-position: right;
 }
 
-.f9s_top_mid,.f9s_bot_mid /* 9-slice frame, top/bottom horizontal slice */
+.f9s_top_mid,.f9s_bot_mid
 {
 	background-repeat: repeat-x;
 	background-position: 0px 0px;
 }
 
-.f9s_mid_left /* 9-slice frame, left vertical slice */
+.f9s_mid_left 
 {
 	background-repeat: repeat-y;
 	background-position: left;
 }
 
-.f9s_mid_right /* 9-slice frame, right vertical slice */
+.f9s_mid_right 
 {
 	background-repeat: repeat-y;
 	background-position: right;
 }
 
-.f9s_center /* 9-slice frame, center slice */
+.f9s_center 
 {
 	background-repeat: repeat;
 	background-position: 0px 0px;
 }
 
-.popup_anchor /* anchors an abspos popup */
+.popup_anchor 
 {
 	position: relative;
 	width: 0px;
@@ -2755,24 +2759,24 @@ a.nontext /* used to override default properties of 'a' tag */
 	vertical-align: top;
 }
 
-span.wrap /* used to force wrap after floated array when nested inside a paragraph */
+span.wrap 
 {
 	content: '';
 	clear: left;
 	display: block;
 }
 
-span.actAsInlineDiv /* used to simulate a DIV with inline display when already nested inside a paragraph */
+span.actAsInlineDiv 
 {
 	display: inline-block;
 }
 
-.position_content,.excludeFromNormalFlow /* used when child content is larger than parent */
+.position_content,.excludeFromNormalFlow 
 {
 	float: left;
 }
 
-.preload_images /* used to preload images used in non-default states */
+.preload_images 
 {
 	position: absolute;
 	overflow: hidden;
@@ -2782,7 +2786,7 @@ span.actAsInlineDiv /* used to simulate a DIV with inline display when already n
 	width: 1px;
 }
 
-preload /* used to specifiy the dimension of preload item */
+preload 
 {
 	height: 1px;
 	width: 1px;
@@ -2796,7 +2800,7 @@ preload /* used to specifiy the dimension of preload item */
 	transition: 0.3s ease-in-out;
 }
 
-input:focus,textarea:focus /* remove default focussed input styling */
+input:focus,textarea:focus 
 {
 	outline: none;
 }
@@ -2807,12 +2811,12 @@ textarea
 	overflow: auto;
 }
 
-.fld-prompt /* form placeholders cursor behavior */
+.fld-prompt 
 {
 	pointer-events: none;
 }
 
-.wrapped-input /* form inputs & placeholders let div styling show thru */
+.wrapped-input 
 {
 	position: absolute;
 	top: 0;
@@ -2821,13 +2825,13 @@ textarea
 	border: none;
 }
 
-.submit-btn /* form submit buttons on top of sibling elements */
+.submit-btn 
 {
 	z-index: 50000;
 	cursor: pointer;
 }
 
-.anchor_item /* used to specify anchor properties */
+.anchor_item 
 {
 	width: 22px;
 	height: 18px;
@@ -2844,7 +2848,7 @@ textarea
 	z-index: 0;
 }
 
-.widget_invisible,.js .invi,.js .mse_pre_init,.js .an_invi /* used to hide the widget before loaded */
+.widget_invisible,.js .invi,.js .mse_pre_init,.js .an_invi
 {
 	visibility: hidden;
 }
@@ -2929,7 +2933,7 @@ textarea
 	width: 0px;
 }
 
-.fld-checkbox input[type=checkbox],.fld-radiobutton input[type=radio] /* Hide native checkbox */
+.fld-checkbox input[type=checkbox],.fld-radiobutton input[type=radio] 
 {
 	position: absolute;
 	overflow: hidden;
@@ -2956,7 +2960,7 @@ textarea
 	cursor: pointer;
 }
 
-p,h1,h2,h3,h4,h5,h6,ol,ul,span.actAsPara /* disable Android font boosting */
+p,h1,h2,h3,h4,h5,h6,ol,ul,span.actAsPara 
 {
 	max-height: 1000000px;
 }
@@ -2975,7 +2979,7 @@ p,h1,h2,h3,h4,h5,h6,ol,ul,span.actAsPara /* disable Android font boosting */
 	line-height: 0;
 }
 
-.wp-slideshow-clip,.SlideShowWidget /* disable pointer events on slide shows */
+.wp-slideshow-clip,.SlideShowWidget 
 {
 	-ms-touch-action: none;
 	touch-action: none;
@@ -3104,3 +3108,4 @@ p,h1,h2,h3,h4,h5,h6,ol,ul,span.actAsPara /* disable Android font boosting */
 	font-family: open-sans-n3, sans-serif;
 }
 
+*/
