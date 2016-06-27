@@ -1,1 +1,1 @@
-This is the repository of the first alpha-blog Rails app
+Alpha-blog Rails app
